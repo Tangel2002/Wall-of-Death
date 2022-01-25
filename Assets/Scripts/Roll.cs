@@ -19,7 +19,14 @@ public class Roll : MonoBehaviour
         if (Input.GetKey("a"))
         {
             player.AddForce(Vector3.left * speed);
-            player.velocity.Normalize();
+        }
+        if(player.velocity.x > speed)
+        {
+            player.velocity = player.velocity.normalized * speed;
+        }
+        if (player.velocity.x < -speed)
+        {
+            player.velocity = player.velocity.normalized * speed;
         }
     }
 }
