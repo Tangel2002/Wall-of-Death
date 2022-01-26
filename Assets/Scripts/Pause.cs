@@ -23,7 +23,7 @@ public class Pause : MonoBehaviour
             {
                 Resume();
             }
-            if (!toggle)
+            else
             {
                 Paused();
             }
