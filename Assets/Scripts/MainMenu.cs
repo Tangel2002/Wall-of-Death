@@ -9,9 +9,9 @@ public class MainMenu : MonoBehaviour
 
     SceneManager loader;
 
-    public void load()
+    public void load(string level)
     {
-        SceneManager.LoadScene("Level One");
+        SceneManager.LoadScene(level);
     }
     public void quit()
     {
