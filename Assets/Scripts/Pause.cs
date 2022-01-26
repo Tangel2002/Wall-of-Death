@@ -7,7 +7,14 @@ public class Pause : MonoBehaviour
 
     bool toggle = false;
     public GameObject canv;
+
+    void Start()
+    {
+    }
+
     // Update is called once per frame
+
+
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))

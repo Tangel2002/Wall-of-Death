@@ -1544,7 +1544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 945945813}
-  speed: 7
+  speed: 9
 --- !u!54 &945945813
 Rigidbody:
   m_ObjectHideFlags: 0
