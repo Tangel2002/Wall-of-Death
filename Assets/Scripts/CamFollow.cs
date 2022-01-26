@@ -6,12 +6,8 @@ public class CamFollow : MonoBehaviour
 {
 
     public GameObject player;
-    public GameObject camera;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public new GameObject camera;
+
 
     // Update is called once per frame
     void Update()

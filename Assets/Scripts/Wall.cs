@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
-    public Collider col;
     public Rigidbody body;
-    public Rigidbody player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public GameObject screen;
     void Update()
     {
         body.velocity = new Vector3(5, 0, 0);
@@ -25,6 +17,11 @@ public class Wall : MonoBehaviour
         if (other.gameObject.name == "Player" || other.gameObject.tag.Equals("Enemy"))
         {
             Destroy(other.gameObject);
+            if(other.gameObject.name == "Player")
+            {
+                screen.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 }
