@@ -21,7 +21,7 @@ public class Jump : MonoBehaviour
         {
             player.AddForce(Vector3.up * jumpForce);
         }
-        if (!isGrounded)
+        if (-player.velocity.y > 0)
         {
             player.AddForce(Vector3.down * 5);
         }

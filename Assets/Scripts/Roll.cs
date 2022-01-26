@@ -22,11 +22,11 @@ public class Roll : MonoBehaviour
         }
         if(player.velocity.x > speed)
         {
-            player.velocity = player.velocity.normalized * speed;
+            player.velocity = new Vector3(1 * speed, player.velocity.y, 0);
         }
         if (player.velocity.x < -speed)
         {
-            player.velocity = player.velocity.normalized * speed;
+            player.velocity = new Vector3(1 * -speed, player.velocity.y, 0);
         }
     }
 }

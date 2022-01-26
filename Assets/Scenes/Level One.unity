@@ -360,8 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 945945813}
-  jumpForce: 500
-  groundRayLength: 0.6
+  jumpForce: 400
+  gravityPower: 10
+  groundRayLength: 0.8
   layers:
     serializedVersion: 2
     m_Bits: 51
