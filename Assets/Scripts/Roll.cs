@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Roll : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Roll : MonoBehaviour
 
     public Rigidbody player;
     public float speed = 10;
+    public string currentScene;
 
     // Update is called once per frame
     void Update()
@@ -27,6 +29,12 @@ public class Roll : MonoBehaviour
         if (player.velocity.x < -speed)
         {
             player.velocity = new Vector3(1 * -speed, player.velocity.y, 0);
+        }
+
+        if(player.gameObject.transform.position.y < -10)
+        {
+            
+            SceneManager.LoadScene(currentScene);
         }
     }
 }

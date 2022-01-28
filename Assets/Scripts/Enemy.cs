@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     {
         if (activated)
         {
-            enemy.velocity = new Vector3(-3, 0, 0);
+            enemy.velocity = new Vector3(-5, 0, 0);
         }
     }
     private void OnTriggerEnter(Collider other)
