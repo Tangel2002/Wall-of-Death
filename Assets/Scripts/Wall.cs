@@ -6,6 +6,7 @@ public class Wall : MonoBehaviour
 {
     public Rigidbody body;
     public GameObject screen;
+    public GameObject pause;
     void Update()
     {
         body.velocity = new Vector3(5, 0, 0);
@@ -19,6 +20,7 @@ public class Wall : MonoBehaviour
             Destroy(other.gameObject);
             if(other.gameObject.name == "Player")
             {
+                pause.SetActive(false);
                 screen.SetActive(true);
                 Time.timeScale = 0;
             }

@@ -631,6 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 245847771}
   screen: {fileID: 2116310556}
+  pause: {fileID: 1472011616}
 --- !u!65 &245847773
 BoxCollider:
   m_ObjectHideFlags: 0
